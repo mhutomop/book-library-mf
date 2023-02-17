@@ -1,0 +1,37 @@
+<single-spa-router>
+  <!--
+
+    This is the single-spa Layout Definition for your microfrontends.
+    See https://single-spa.js.org/docs/layout-definition/ for more information.
+
+  -->
+
+  <!-- Example layouts you might find helpful:
+
+  <nav>
+    <application name="@org/navbar"></application>
+  </nav>
+  <route path="settings">
+    <application name="@org/settings"></application>
+  </route>
+
+  -->
+
+  <main>
+    <route default>
+      <application name="@react-app/search-app"></application>
+    </route>
+    <route path="/auth">
+      <application name="auth-app"></application>
+    </route>
+    <route path="/user">
+      <application name="@react-app/user-app"></application>
+    </route>
+    <route path="/book">
+      <application name="@react-app/book-app"></application>
+    </route>
+    <route path="/transaction">
+      <application name="@vue-app/transaction-app"></application>
+    </route>
+  </main>
+</single-spa-router>
